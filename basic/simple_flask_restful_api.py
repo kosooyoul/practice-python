@@ -5,7 +5,7 @@ app = Flask('My Simple Flask Restful API', template_folder = 'template')
 
 @app.route('/')
 def index():
-    return render_template('index.html', error = None)
+    return render_template('index.html', date=datetime.datetime.now())
 
 @app.route('/get', methods=['GET'])
 def get():
