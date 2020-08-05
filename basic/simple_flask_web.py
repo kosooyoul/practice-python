@@ -9,6 +9,8 @@ def hello():
 def test():
 	return '<h1>Test Page</h1>'
 
+if __name__ == '__main__': app.run(port = 80)
+
 # Run by Flask on terminal
 # export FLASK_APP=simple_flask_web.py
 # flask run
@@ -18,3 +20,6 @@ def test():
 
 # Use another port
 # flask run --port 5100
+
+# or Run Here
+# if __name__ == '__main__': app.run(port = 80)
