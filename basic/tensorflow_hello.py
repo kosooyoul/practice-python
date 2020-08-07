@@ -16,8 +16,11 @@ print('# Start')
 
 hello = tf.constant('Hello Tensorflow')
 
-session = tf.Session()
-
-print(session.run(hello))
+# Same code
+# session = tf.Session()
+# print(session.run(hello))
+# session.close()
+with tf.Session() as session:
+	print(session.run(hello))
 
 print('# End')
